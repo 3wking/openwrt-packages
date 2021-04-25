@@ -16,14 +16,14 @@ endef
 define Package/$(PKG_NAME)
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
-	TITLE:=LuCI support for clash
+	TITLE:=LuCI support for opneclash
 	PKGARCH:=all
 	DEPENDS:=+iptables +dnsmasq-full +coreutils +coreutils-nohup +bash +curl +jsonfilter +ca-certificates +ipset +ip-full +iptables-mod-tproxy +iptables-mod-extra +libcap +ruby +ruby-yaml
 	MAINTAINER:=vernesong
 endef
 
 define Package/$(PKG_NAME)/description
-    A LuCI support for clash
+    A LuCI support for opneclash
 endef
 
 define Build/Prepare
